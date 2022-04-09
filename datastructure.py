@@ -17,8 +17,9 @@
 #
 # number = list(range(20))
 # print(number)
-#
-#
+
+
+
 # chars = list("hello world")
 # print(chars)
 # print(len(chars))
@@ -33,8 +34,8 @@
 # print(
 #     zeros
 # )
-#
-#
+
+
 # combined = letters + zeros
 # print(combined)
 # print(len(combined))
@@ -82,16 +83,70 @@
 
 ####### list  adding and remove
 
-letters = ["a","b","c"]
-letters.append("d")
-print(letters)
-letters.insert(0,"Limon")
-print(letters)
-letters.pop()
-print(letters)
-letters.pop(1)
-print(letters)
-letters.remove("b")
-print(letters)
+# letters = ["a","b","c"]
+# letters.append("d")
+# print(letters)
+# letters.insert(0,"Limon")
+# print(letters)
+# letters.pop()
+# print(letters)
+# letters.pop(1)
+# print(letters)
+# letters.remove("b")
+# print(letters)
+
+
+#### finding the itemes
+
+# letters = ["a","b","c"]
+# letters.index("a")
+# print(letters.index("b"))
+
+# if "f" in letters:
+#     print(letters.index("f"))
+# if "v" in letters:
+#     print(letters.index("v"))
+
+
+####### Sorting list
+
+# numbers = [2,5,1,5,7,2,7,2,54,7,923,4]
+# # numbers.sort(reverse=True)
+# print(sorted(numbers))
+# print(numbers)
+
+# items = [
+#     ("product 1 ",10),
+#     ("product 2 ",5),
+#     ("product 3 ",20)
+# ]
+# # print(sorted(items))
+#
+# def sorted_item(item):
+#     return item[1]
+#
+# items.sort(key=sorted_item,reverse=True)
+# print(items)
+
+
+
+# items_list = [
+#     ("Nawshin",20),
+#     ("Nawshin",10),
+#     ("Nawshin",5)
+# ]
+#
+#
+# def sort_item(item):
+#     return item[1]
+# items_list.sort(key=sort_item)
+# print(items_list)
+
+
+
+
+
+
+
 
 
