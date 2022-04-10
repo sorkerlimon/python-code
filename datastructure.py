@@ -109,11 +109,16 @@
 
 
 ####### Sorting list
-
+#
 # numbers = [2,5,1,5,7,2,7,2,54,7,923,4]
 # # numbers.sort(reverse=True)
 # print(sorted(numbers))
 # print(numbers)
+
+# numbers.sort(reverse=False)
+# print(numbers)
+#
+# print(sorted(numbers))
 
 # items = [
 #     ("product 1 ",10),
@@ -144,9 +149,49 @@
 
 
 
+################### sort Use lambda function
 
 
 
+# items_list = [
+#     ("Nawshin",20),
+#     ("Nawshin",10),
+#     ("Nawshin",5)
+# ]
+# #mbda item: item[1] )
+# print(items_list)
+
+
+# items_list.sort(key=lambda newitem:newitem[1] )
+# print(items_list)
 
 
 
+########## map functon
+
+# items_list = [
+#     ("Nawshin",20),
+#     ("Nawshin",10),
+#     ("Nawshin",5)
+# ]
+
+#
+# prices = []
+#
+# for item in items_list:
+#     prices.append(item[1])
+# print(prices)
+#
+# x = map(lambda item:item[1],items_list)
+# print("x :",list(x))
+
+
+# prices = []
+#
+# for item in items_list:
+#     prices.append(item[1])
+# print(prices)
+#
+#
+# x = list(map(lambda item:item[1],items_list))
+# print(x)
