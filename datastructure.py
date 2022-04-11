@@ -67,7 +67,7 @@
 
 ## Looping over the lisit
 
-# letters = ["a","b","c"]
+letters = ["a","b","c"]
 
 # letter = [letter for letter in enumerate(letters)]
 # print(letter)
@@ -80,6 +80,13 @@
 #
 # for index, letter in enumerate(letters):
 #     print(f"Index number is :{index} & {letter} this is the letter")
+
+# for index,letter in enumerate(letters):
+#     print(index ,letter)
+#
+# index  = [index  for index ,letter in enumerate(letters)]
+# print(index)
+
 
 ####### list  adding and remove
 
@@ -195,3 +202,45 @@
 #
 # x = list(map(lambda item:item[1],items_list))
 # print(x)
+
+
+################# Filter  functiuon
+
+# items_list = [
+#     ("Nawshin",20),
+#     ("Limon",10),
+#     ("Sorker",5)
+# ]
+
+
+# filter = list(filter(lambda item:item[1] >= 10 , items_list))
+# print(filter)
+
+# filter = list(filter(lambda item:item[1]>10,items_list))
+#
+# print(filter)
+
+# filter = list(filter(lambda item:item[1]>=10,items_list))
+# print(filter)
+
+
+############ list comprehensive
+
+
+# items_list = [
+#     ("Nawshin",20),
+#     ("Limon",10),
+#     ("Sorker",5)
+# ]
+#
+#
+# prices  = list(map(lambda item:item[1],items_list))
+# print(prices)
+# prices = [item[1] for item in items_list]
+# print(prices)
+#
+# filter = list(filter(lambda item:item[1]>=10,items_list))
+# print(filter)
+# filter = [item for item in items_list if item[1]>=10 ]
+# print(filter)
+
