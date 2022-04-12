@@ -244,3 +244,73 @@ letters = ["a","b","c"]
 # filter = [item for item in items_list if item[1]>=10 ]
 # print(filter)
 
+
+######## zip function prazctice
+
+a = [1,2,3,4,5]
+b = [6,7,8,9,0]
+#
+# result = list(zip(a,b))
+# print(result)
+#
+# result = []
+# for  a,b in zip(a,b):
+#     r = a+b
+#     result.append(r)
+# print(result)
+
+
+
+
+###########  Stacks problem
+# browssing_sessiion =  []
+# browssing_sessiion.append(1)
+# browssing_sessiion.append(2)
+# browssing_sessiion.pop()
+#
+# if not browssing_sessiion:
+#     browssing_sessiion[-1]
+#
+# print(browssing_sessiion)
+
+# browser =  []
+# browser.append(1)
+# browser.append(2)
+# browser.pop()
+#
+# if not browser:
+#     browser[-1]
+# print(browser)
+
+
+############# Queues problem
+
+# from collections import deque
+#
+# queue = deque([])
+# queue.append(1)
+# # queue.append(2)
+# # queue.append(3)
+# # queue.append(4)
+# queue.popleft()
+#
+# if not queue:
+#     print("Empty")
+#
+# print(queue)
+
+
+
+# from collections import deque
+#
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# queue.append(4)
+#
+# queue.popleft()
+#
+# if not queue:
+#     print("Empty")
+# print(queue)
