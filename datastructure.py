@@ -160,11 +160,11 @@ letters = ["a","b","c"]
 
 
 
-# items_list = [
-#     ("Nawshin",20),
-#     ("Nawshin",10),
-#     ("Nawshin",5)
-# ]
+items_list = [
+    ("Nawshin",20),
+    ("Nawshin",10),
+    ("Nawshin",5)
+]
 # #mbda item: item[1] )
 # print(items_list)
 
@@ -173,6 +173,14 @@ letters = ["a","b","c"]
 # print(items_list)
 
 
+# items_list.sort(key=lambda new:new[1])
+# print(items_list)
+
+# items_list.sort(key=lambda new:new[1])
+# print(items_list)
+#
+# items_list.sort(reverse=True)
+# print(items_list)
 
 ########## map functon
 
@@ -247,8 +255,8 @@ letters = ["a","b","c"]
 
 ######## zip function prazctice
 
-a = [1,2,3,4,5]
-b = [6,7,8,9,0]
+# a = [1,2,3,4,5]
+# b = [6,7,8,9,0]
 #
 # result = list(zip(a,b))
 # print(result)
@@ -262,7 +270,7 @@ b = [6,7,8,9,0]
 
 
 
-###########  Stacks problem
+###########  Stacks problem LIFO
 # browssing_sessiion =  []
 # browssing_sessiion.append(1)
 # browssing_sessiion.append(2)
@@ -283,7 +291,7 @@ b = [6,7,8,9,0]
 # print(browser)
 
 
-############# Queues problem
+############# Queues problem FIFO
 
 # from collections import deque
 #
@@ -301,7 +309,7 @@ b = [6,7,8,9,0]
 
 
 
-# from collections import deque
+# from collections import deque FIFO
 #
 # queue = deque([])
 # queue.append(1)
@@ -314,3 +322,103 @@ b = [6,7,8,9,0]
 # if not queue:
 #     print("Empty")
 # print(queue)
+
+
+############## Tuple started  (Tuple means you cannnot modify vlaues it's unmuteabel)
+
+# point = (1,2) + (3,4)
+#
+# print(type(point))
+# print(point)
+# point = (1,2) * 3
+# print(point)
+# point = tuple([1,2,5])
+# print(point)
+#
+# point  = (1,2,3,4,5,6)
+# print(point[0:2])
+#
+# x, y, *z = point
+# if 2 in point:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+
+###########  Swapping Variables
+
+# x = 10
+# y = 11
+#
+# z = x
+# x = y
+# y = z
+#
+# print("x",x)
+# print("y",y)
+#
+# m =10
+# n =11
+# print("m",m)
+# print("n",n)
+# m,n = n,m
+# print("m",m)
+# print("n",n)
+
+
+############ Array  (Array look like list fully)
+
+# from array import array
+#
+# numbers = array("i",[1,2,4,5])
+# print(numbers)
+#
+# numbers = array("i",[1,2,4,5])
+# numbers.append(4)
+# print(numbers)
+#
+# numbers = array("i",[1,2,4,5])
+# numbers.pop()
+# print(numbers)
+#
+# numbers = array("i",[1,2,4,5])
+# numbers.remove(1)
+# print(numbers)
+#
+# numbers = array("i",[1,2,4,5])
+# numbers.insert(0,3)
+# print(numbers)
+#
+# numbers = array("i",[1,2,4,5])
+# numbers[2] = 10
+# print(numbers)
+
+
+
+#########  sets function (it's doesn't provide duplicate item)
+
+# numbers = [1,1,2,3,2,3]
+# uniques = set(numbers)
+# print(uniques)
+# 
+# second = {1,2,3,4}
+# second.add(5)
+# print(second)
+# second.pop()
+# print(second)
+#
+# second = {1,2,3,4}
+# second.remove(1)
+# print(second)
+# print(len(second))
+#
+# numbers = [1,2,3,4,5,6]
+# first = set(numbers)
+# second = {1,7}
+# print(first | second)
+# print(first & second)
+# print(first - second)
+
+
+
