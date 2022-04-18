@@ -67,7 +67,7 @@
 
 ## Looping over the lisit
 
-letters = ["a","b","c"]
+# letters = ["a","b","c"]
 
 # letter = [letter for letter in enumerate(letters)]
 # print(letter)
@@ -219,7 +219,9 @@ items_list = [
 #     ("Limon",10),
 #     ("Sorker",5)
 # ]
-
+#
+# filer =  list(filter(lambda item:item[1]>=10,items_list))
+# print(filer)
 
 # filter = list(filter(lambda item:item[1] >= 10 , items_list))
 # print(filter)
@@ -230,6 +232,8 @@ items_list = [
 
 # filter = list(filter(lambda item:item[1]>=10,items_list))
 # print(filter)
+
+
 
 
 ############ list comprehensive
@@ -327,7 +331,7 @@ items_list = [
 ############## Tuple started  (Tuple means you cannnot modify vlaues it's unmuteabel)
 
 # point = (1,2) + (3,4)
-#
+
 # print(type(point))
 # print(point)
 # point = (1,2) * 3
@@ -401,7 +405,7 @@ items_list = [
 # numbers = [1,1,2,3,2,3]
 # uniques = set(numbers)
 # print(uniques)
-# 
+#
 # second = {1,2,3,4}
 # second.add(5)
 # print(second)
@@ -421,4 +425,39 @@ items_list = [
 # print(first - second)
 
 
+################ Dictionaries
 
+# value = {x: x * 2 for x in range(5)}
+# print(value)
+#
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict["brand"])
+#
+# item = {
+#     "Name":"limon",
+#     "Age": "22"
+# }
+# print(item["Name"])
+#
+# value =list(map(lambda item:item ,item))
+#
+# print(value)
+
+################# Expression Generator Daata size komanor jonnno use kore thake
+
+from sys import getsizeof ### Size dekhar jonno kore
+
+# values = [x*2 for x in range(10)]
+# print(values)
+#
+# for x in values:
+#     print(x)
+
+values = (x*2 for x in range(0000))
+print("Gen :",getsizeof(values))
+values = [x*2 for x in range(1000)]
+print("List :",getsizeof(values))
