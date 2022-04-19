@@ -449,15 +449,44 @@ items_list = [
 
 ################# Expression Generator Daata size komanor jonnno use kore thake
 
-from sys import getsizeof ### Size dekhar jonno kore
+# from sys import getsizeof ### Size dekhar jonno kore
+#
+# # values = [x*2 for x in range(10)]
+# # print(values)
+# #
+# # for x in values:
+# #     print(x)
+#
+# values = (x*2 for x in range(0000))
+# print("Gen :",getsizeof(values))
+# values = [x*2 for x in range(1000)]
+# print("List :",getsizeof(values))
 
-# values = [x*2 for x in range(10)]
+
+########### Unpacking operator
+
+# numbers = [1,2,3,4]
+# # print(
+# #     numbers
+# # )
+#
+# print(*numbers)  ######## Jodi individual bhave print krte cai tahole ei bhave unpack krte hoeb
+#
+# values = list(range(5))
 # print(values)
 #
-# for x in values:
-#     print(x)
-
-values = (x*2 for x in range(0000))
-print("Gen :",getsizeof(values))
-values = [x*2 for x in range(1000)]
-print("List :",getsizeof(values))
+# values = [*range(5),*"Hello"]
+# print(values)
+#
+# first = [1,2]
+# second = [3,4]
+#
+# values = [*first,"a",*second,*"Hello"]
+# print(values)
+#
+#
+# first = {"x":2}
+# second = {"x":25,"y":23}
+#
+# combined = {**first,**second,"z":1}
+# print(combined)
