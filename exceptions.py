@@ -40,3 +40,48 @@
 #     file.close()
 
 
+
+#######   With state ment  exception handaling
+
+
+# try:
+#  with open("machinelearning.py") as file:
+#   print("File opened")
+#
+# except (ValueError,ZeroDivisionError) as ex:
+#  print(ex)
+# else:
+#  print("NO excepiton")
+
+########### Rais Exception
+
+# def xfactot(age):
+#  if age <= 0 :
+#   raise ValueError("Age can'nt be les or 0")
+#  return 10/age
+#
+#
+# try:
+#  xfactot(-1)
+# except ValueError as value:
+#  print(value)
+
+
+
+###### Cost of rising exception
+# from timeit import timeit
+#
+# code1= """
+# def xfactot(age):
+#  if age <= 0 :
+#   raise ValueError("Age can'nt be les or 0")
+#  return 10/age
+#
+#
+# try:
+#  xfactot(-1)
+# except ValueError as value:
+#  pass
+#  """
+#
+# print("Add",timeit(code1,number=1000))
