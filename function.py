@@ -53,3 +53,61 @@
 
 
 
+####### Keyword Arguments
+
+# def increment(number ,by):
+#     return number + by
+#
+# result = increment(2 , 1)
+# print(result)
+#
+# def increment(number ,by=2):
+#     return number + by
+#
+# result = increment(2)
+# print("Pass Argument : ",result)
+
+
+
+
+########## xarg argumnet
+
+# def multiply(x,y):
+#     return x * y
+#
+# result = multiply(2,3)
+# print(result)
+
+
+
+# def multiply(*numbres):
+#     total = 1
+#     for number in numbres:
+#         total  = total * number
+#     return total
+#
+# result = multiply(2,3,5,4,3,)
+# print(result)
+
+
+
+
+#################### ** arg  function   (amra key:value pear hiseba patha te pari)
+
+
+# def save_user(**user):
+#     print(user)
+#
+# save_user(id=1,name="Limon",year=1998)
+
+
+
+
+
+
+############# Scope Function
+
+
+
+
+
