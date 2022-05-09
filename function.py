@@ -107,7 +107,28 @@
 
 ############# Scope Function
 
+# m = "b"
+#
+# def greet(name):
+#     global m
+#     m = "d"
+#
+# print(m)
 
 
 
+
+########## FIzz Buzz problem solution
+
+# def fizzBuzz(input):
+#     if(input % 3 == 0) & (input % 5 == 0):
+#         return "FizzBuzz"
+#     elif input % 3 == 0:
+#         return "Fizz"
+#     elif input % 5 == 0:
+#         return "Buzz"
+#     return input
+#
+# result = fizzBuzz(1.5)
+# print(result,"It's not divisiable")
 
