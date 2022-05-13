@@ -144,3 +144,50 @@
 #
 # onj = Sum(12,10)
 # onj.additon()
+
+
+
+# ########## Class Vs Instance Attribute
+#
+# class Point:
+#     default_colour = "Black"  ########## etar mane hocce sob sobar default bhave ei Attributer ta thakbe
+#
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#
+#     def draw(self):
+#         print(f"point {self.x} {self.y}")
+#
+#
+# point = Point(1,2)
+# print(Point.default_colour)
+# point.draw()
+
+
+########## Class Vs Instance Method
+
+# class Point:
+#
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#     @classmethod ######## eta hocce class level method
+#     def zero(cls):
+#         try:
+#             first = int(input("First intput : "))
+#             second = int(input("Second intput : "))
+#             return cls(first,second)
+#         except ValueError as typeerror:
+#             print("Please input your valid Nu2mber ")
+#         else:
+#             print("Keep going")
+#
+#     def draw(self):
+#         print(f"point {self.x} {self.y}")
+#
+#
+# point = Point.zero()
+# point.draw()
