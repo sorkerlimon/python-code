@@ -191,3 +191,83 @@
 #
 # point = Point.zero()
 # point.draw()
+
+
+
+
+
+############### Magic method
+
+# class Point:
+#
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#     def __str__(self):
+#         return f"{self.x} {self.y}"
+#
+#
+#     def draw(self,z):
+#         print(f"point {self.x} {self.y} {z}")
+#
+#
+# point = Point(1,2)
+# print(point)
+# point.draw(4)
+
+
+
+######### Comparing obj
+
+# class Point:
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#     def __eq__(self, other):
+#         return self.x == other.x and self.y == other.y
+#
+#     def __gt__(self, other):
+#         return self.x > other.x and self.y > other.y
+#
+#     def __gt__(self, other):
+#         return self.x < other.x and self.y < other.y
+#
+# point = Point(1,2)
+# other = Point(6,2)
+#
+# print(point == other)
+
+
+
+########## Making custom container
+
+# class Cloud:
+#     def __init__(self):
+#         self.tags = {}
+#
+#     def add(self,tag):
+#         self.tags[tag.lower()] = self.tags.get(tag.lower(),0) + 1
+#
+#
+#     def __getitem__(self, tag):
+#         return self.tags.get(tag.lower(),0)
+#
+#     def __setitem__(self, tag, count):
+#         self.tags[tag.lower()] = count
+#
+#     def __len__(self):
+#         return len(self.tags)
+#
+#     def __iter__(self):
+#         return iter(self.tags)
+#
+#
+# cloud = Cloud()
+# cloud["python"] = 10
+# cloud.add("Limon")
+# cloud.add("LImon")
+# cloud.add("Limon")
+# print(cloud.tags)
+
