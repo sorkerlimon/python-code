@@ -271,3 +271,74 @@
 # cloud.add("Limon")
 # print(cloud.tags)
 
+
+
+###################### Inharitence
+
+# class Animal:
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+#
+#     def eat(self):
+#         print(f"Eat ... {self.x}")
+#
+# class Mammal(Animal):
+#
+#     def walk(self):
+#         print("Walk ...",self.y)
+#
+# class Fish(Animal):
+#
+#
+#     def swim(self):
+#         print("Swim ... !",self.y)
+#
+#
+# mammal = Mammal(1,2)
+# mammal.walk()
+# mammal.eat()
+#
+#
+# fish = Fish(1,2)
+# fish.eat()
+# fish.swim()
+
+
+
+
+###################### Inheritance with real life example
+
+# class Polygon:
+#
+#     def __init__(self,sides):
+#         self.sides = sides
+#
+#     def display_info(self):
+#         print("A polygon is two diamonsolam shape with straight lines")
+#
+#     def get_perameter(self):
+#         perameter = sum(self.sides)
+#         return perameter
+#
+# class Triangle(Polygon):
+#     def display_info(self):
+#         print("A triangle is polygon with 3 edges ")
+#         Polygon.display_info(self)
+#
+# class Quadrelatral(Polygon):
+#     def display_info(self):
+#         print("A triangle is polygon with 4 edges ")
+#         super().display_info()
+#
+#
+# t = Triangle([2,3,4])
+# t.display_info()
+# peramemter1 = t.get_perameter()
+# print("sum of the triangle :",peramemter1)
+#
+# t1 = Quadrelatral([2,3,4,5])
+# t1.display_info()
+# peramemter1 = t.get_perameter()
+# print("sum of the Quadrelatral :",peramemter1)
