@@ -342,3 +342,30 @@
 # t1.display_info()
 # peramemter1 = t.get_perameter()
 # print("sum of the Quadrelatral :",peramemter1)
+
+
+
+######## Method overridding
+
+# class Animal:
+#     def __init__(self):
+#         self.age = 1
+#
+#     def eat(self):
+#         print("Eat")
+#
+#
+# class Mamal(Animal):
+#
+#     def __init__(self):
+#         self.weight = 2
+#         super(Mamal, self).__init__()
+#         # super().__init__()
+#
+#     def walk(self):
+#         print("Walk")
+#
+#
+# m = Mamal()
+# print(m.age)
+# print(m.weight)
