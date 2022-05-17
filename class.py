@@ -369,3 +369,64 @@
 # m = Mamal()
 # print(m.age)
 # print(m.weight)
+
+
+######## Multii level inheritence   (It's bad practice alwys try to use multilevel inheritence )
+
+
+# class Animal:
+#     def eat(self):
+#         print("Eat")
+# class Bird(Animal):
+#     def fly(self):
+#         print("fly")
+
+
+
+# ############### Multiple inheritance
+# class Employee:
+#     def greet(self):
+#         print("Employee Greet ")
+# class Person:
+#     def greet(self):
+#         print("person  Greet ")
+#
+# class Manager(Employee,Person):
+#     pass
+
+
+
+
+####################  Inheritance example
+
+# class InvalidOperator(Exception):
+#     pass
+#
+# class Stream:
+#     def __init__(self):
+#         self.opened = False
+#
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperator("Stream is already opened")
+#         self.opened = True
+#
+#
+#     def close(self):
+#         if self.closed:
+#             raise InvalidOperator("Stream is already closed")
+#         self.closed = False
+#
+#
+# class FileStram(Stream):
+#     def read(self):
+#         print("Reading data from a file ")
+#
+#
+# class NetStrem(Stream):
+#     def read(self):
+#         print("Reading data from a Network ")
+#
+# netStrem = NetStrem()
+# netStrem.opened
+# netStrem.read()
