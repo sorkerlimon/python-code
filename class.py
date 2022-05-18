@@ -430,3 +430,88 @@
 # netStrem = NetStrem()
 # netStrem.opened
 # netStrem.read()
+
+
+
+
+############ Abstract Base classes
+# from abc import ABC,abstractmethod
+#
+# class InvalidOperator(Exception):
+#     pass
+#
+# class Stream(ABC):
+#     def __init__(self):
+#         self.opened = False
+#
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperator("Stream is already opened")
+#         self.opened = True
+#
+#
+#     def close(self):
+#         if self.closed:
+#             raise InvalidOperator("Stream is already closed")
+#         self.closed = False
+#
+#     @abstractmethod
+#     def read(self):
+#         pass
+#
+#
+# class FileStram(Stream):
+#     def read(self):
+#         print("Reading data from a file ")
+#
+#
+# class NetStrem(Stream):
+#     def read(self):
+#         print("Reading data from a Network ")
+#
+# class MemoryStream(Stream):
+#     def read(self):
+#         print("memory stream are reading")
+#
+# memory = MemoryStream()
+# memory.read()
+
+
+ ##################### Polymorphisom
+# Polymorphsiom  class hocce amon ekta method je ta declear kore dile base classs e  seta protita class e use kora lagbe child class e e and etar mane ee hoce onk gula form ek sahte  )
+# from abc import ABC,abstractmethod
+# class UIcontorl(ABC):
+#     @abstractmethod
+#     def draw(self):
+#         pass
+#
+# class TextBox(UIcontorl):
+#     def draw(self):
+#         print("Test box")
+#
+# class DropDownList(UIcontorl):
+#     def draw(self):
+#         print("Drop Down List..")
+#     def art(self):
+#         print("Art Down List..")
+#
+# class Art(UIcontorl):
+#     def art(self):
+#         print("Drop Down List..")
+#     def draw(self):
+#         print("art class..")
+#
+# def draw(controls):
+#     for control in controls:
+#         control.draw()
+#
+# ddl = DropDownList()
+# ddl.art()
+# textbox = TextBox()
+# art  = Art()
+#
+# draw([ddl,textbox,art])
+
+
+
+
