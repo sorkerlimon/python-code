@@ -434,7 +434,7 @@
 
 
 
-############ Abstract Base classes
+############ Abstract Base classes class hocce amon ekta method je ta declear kore dile base classs e  seta protita class e use kora lagbe child class e
 # from abc import ABC,abstractmethod
 #
 # class InvalidOperator(Exception):
@@ -478,7 +478,7 @@
 
 
  ##################### Polymorphisom
-# Polymorphsiom  class hocce amon ekta method je ta declear kore dile base classs e  seta protita class e use kora lagbe child class e e and etar mane ee hoce onk gula form ek sahte  )
+# Polymorphsiom   e and etar mane ee hoce onk gula form ek sahte  )
 # from abc import ABC,abstractmethod
 # class UIcontorl(ABC):
 #     @abstractmethod
@@ -515,3 +515,22 @@
 
 
 
+#############################  Buit in class
+
+
+# class Text(str):
+#     def duplicate(self):
+#         return self + self
+#
+# text = Text("PgdsfgYYYGD")
+# print(text.lower())
+
+
+
+####### CLass name tupple
+from collections import namedtuple
+Point = namedtuple("Point",["x","y"])
+p1 = Point(1,2)
+p2 = Point(1,2)
+print(p1)
+print(p2)
